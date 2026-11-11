@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Habitat - Inmobiliaria & Bienes Raíces</title>
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-building"></i>
+                <span>Urban<span class="highlight">Habitat</span></span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#propiedades">Propiedades</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#contacto" class="btn-tasacion">Tasación Gratis</a>
+        </div>
+    </header>
+
+    <!-- Hero Section con Buscador -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Encuentra el lugar donde quieres vivir</h1>
+                <p>Casas, departamentos y emprendimientos seleccionados especialmente para ti.</p>
+
+                <!-- Buscador Integrado -->
+                <form class="search-box" id="search-form">
+                    <div class="search-group">
+                        <label>Operación</label>
+                        <select id="operacion">
+                            <option>Comprar</option>
+                            <option>Alquilar</option>
+                            <option>Emprendimientos</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label>Tipo de propiedad</label>
+                        <select id="tipo">
+                            <option>Departamento</option>
+                            <option>Casa</option>
+                            <option>Terreno</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label>Ubicación</label>
+                        <input type="text" id="ubicacion" placeholder="Ej: Palermo, Belgrano...">
+                    </div>
+                    <div class="search-group btn-container">
+                        <button type="submit" class="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i> Buscar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propiedades Destacadas -->
+    <main id="propiedades" class="container">
+        <div class="section-title">
+            <h2>Propiedades Destacadas</h2>
+            <p>Las mejores oportunidades del mercado inmobiliario actual</p>
+        </div>
+
+        <div class="properties-grid" id="properties-container">
+            <!-- Cards generadas por JS -->
+        </div>
+    </main>
+
+    <!-- Sección Contacto / Formulario -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>¿Quieres tasar o vender tu propiedad?</h2>
+                <p>Déjanos tus datos y un asesor se comunicará contigo hoy mismo.</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Nombre y Apellido" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                </div>
+                <input type="tel" placeholder="Teléfono de contacto" required>
+                <textarea rows="4" placeholder="Cuéntanos sobre tu consulta o propiedad..." required></textarea>
+                <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Urban Habitat Real Estate - Proyecto demostrativo subido a GitHub Pages.</p>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="js/app.js"></script>
+</body>
+</html>
